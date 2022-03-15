@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* ws2812 RGB LED */
 #define RGB_DI_PIN      D3
 
+#define RGBLIGHT_SLEEP
+
 #ifdef RGBLIGHT_ENABLE
 
 #   define RGBLIGHT_EFFECT_BREATHING
@@ -75,4 +77,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 #define SPLIT_USB_DETECT
-
