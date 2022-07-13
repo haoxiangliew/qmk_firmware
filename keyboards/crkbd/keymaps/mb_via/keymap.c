@@ -85,18 +85,7 @@ void keyboard_post_init_kb(void) {
     watchdog_timer = timer_read32();
 }
 
-// no more timer / sleep hacks just follow oled timeout
-void oled_watcher_rgb(void) {
-    if (!is_oled_on()) {
-        rgblight_suspend();
-    }
-    if (!rgblight_is_enabled() && is_oled_on()) {
-        rgblight_wakeup();
-    }
-};
-
 void housekeeping_task_kb(void) {
-    oled_watcher_rgb();
     if (!watchdog_ping_done) {
         if (is_keyboard_master()) {
             if (timer_elapsed32(watchdog_timer) > 100) {
