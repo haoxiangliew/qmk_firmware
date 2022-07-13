@@ -85,7 +85,8 @@ void keyboard_post_init_kb(void) {
     watchdog_timer = timer_read32();
 }
 
-void housekeeping_task_kb(void) {
+void housekeeping_task_user(void) {
+    // watchdog
     if (!watchdog_ping_done) {
         if (is_keyboard_master()) {
             if (timer_elapsed32(watchdog_timer) > 100) {
