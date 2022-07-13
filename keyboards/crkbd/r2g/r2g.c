@@ -87,24 +87,6 @@ led_config_t g_led_config = { {
 
 #endif
 
-#ifdef RGBLIGHT_SLEEP
-
-// no more timer / sleep hacks just follow oled timeout
-void oled_watcher_rgb(void) {
-    if (!is_oled_on()) {
-        rgblight_suspend();
-    }
-    if (!rgblight_is_enabled() && is_oled_on()) {
-        rgblight_wakeup();
-    }
-};
-
-void housekeeping_task_kb(void) {
-    oled_watcher_rgb();
-};
-
-#endif
-
 #ifdef OLED_ENABLE
 
 oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
