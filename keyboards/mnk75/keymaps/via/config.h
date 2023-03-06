@@ -20,7 +20,7 @@
 #define QMK_KEYS_PER_SCAN 12
 
 // 6 Layers
-#define DYNAMIC_KEYMAP_LAYER_COUNT 6
+#define DYNAMIC_KEYMAP_LAYER_COUNT 10
 
 // Mouse Key Settings
 #define MOUSEKEY_DELAY 0
