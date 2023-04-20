@@ -22,7 +22,7 @@
 // NKRO
 #define FORCE_NKRO
 
-// 6 Layers
+// 10 Layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 10
 
 // Mouse Key Settings
