@@ -24,3 +24,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
+
+// USB 1000Hz polling rate
+#define USB_POLLING_INTERVAL_MS 1
+#define QMK_KEYS_PER_SCAN 12
+
+// split watchdog
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_USB_TIMEOUT 500
+
+// 5 Layers
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+// Mouse Key Settings
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_INTERVAL 16
+#define MOUSEKEY_WHEEL_DELAY 0
+#define MOUSEKEY_MAX_SPEED 6
+#define MOUSEKEY_TIME_TO_MAX 64
