@@ -15,13 +15,6 @@
 
 #pragma once
 
-// USB 1000Hz polling rate
-#define USB_POLLING_INTERVAL_MS 1
-#define QMK_KEYS_PER_SCAN 12
-
-// NKRO
-#define FORCE_NKRO
-
 // 10 Layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 10
 
